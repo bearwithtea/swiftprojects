@@ -1,0 +1,19 @@
+var input = "turpentine and turtles"
+var output = ""
+
+for char in input {
+  let lowerChar = char.lowercased()
+  switch lowerChar {
+    case "a", "i", "o":
+    output = output + char.uppercased()
+    case "e":
+    output = output + char.uppercased()
+    case "u":
+    output = output + char.uppercased()
+    default:
+    continue
+
+  }
+}
+
+print(output)
